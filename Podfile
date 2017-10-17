@@ -7,6 +7,7 @@ def shared_pods
   pod 'Kingfisher', '~> 4.1'
   pod 'Alamofire', '~> 4.5'
   pod 'PromiseKit/Alamofire', '~> 4.4'
+  pod 'SwiftyJSON'
 end
 
 def testing_pods

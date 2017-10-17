@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		082250932A36467C73BA2D63 /* Pods_BestPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B0CFF42935D58758F0390 /* Pods_BestPracticeUITests.framework */; };
 		1A6D22711F95F71F00691A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22701F95F71F00691A5A /* AppDelegate.swift */; };
-		1A6D22731F95F71F00691A5A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22721F95F71F00691A5A /* FirstViewController.swift */; };
+		1A6D22731F95F71F00691A5A /* BPUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22721F95F71F00691A5A /* BPUserViewController.swift */; };
 		1A6D22751F95F71F00691A5A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22741F95F71F00691A5A /* SecondViewController.swift */; };
 		1A6D22781F95F71F00691A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D22761F95F71F00691A5A /* Main.storyboard */; };
 		1A6D227A1F95F71F00691A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D22791F95F71F00691A5A /* Assets.xcassets */; };
 		1A6D227D1F95F71F00691A5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D227B1F95F71F00691A5A /* LaunchScreen.storyboard */; };
 		1A6D22881F95F71F00691A5A /* BestPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22871F95F71F00691A5A /* BestPracticeTests.swift */; };
 		1A6D22931F95F71F00691A5A /* BestPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22921F95F71F00691A5A /* BestPracticeUITests.swift */; };
+		1A6D22A31F960A1A00691A5A /* BPUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22A21F960A1A00691A5A /* BPUserTableViewCell.swift */; };
+		1A6D22A61F960FBE00691A5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22A51F960FBE00691A5A /* User.swift */; };
 		28FB927B72BB2CDC80CD458C /* Pods_BestPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFEFF69A71D81576075D325 /* Pods_BestPracticeTests.framework */; };
 		6F483E47C53F21D4A7ABAA2A /* Pods_BestPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7CBD384DB472F07EAC89A /* Pods_BestPractice.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +42,7 @@
 /* Begin PBXFileReference section */
 		1A6D226D1F95F71F00691A5A /* BestPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6D22701F95F71F00691A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A6D22721F95F71F00691A5A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		1A6D22721F95F71F00691A5A /* BPUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPUserViewController.swift; sourceTree = "<group>"; };
 		1A6D22741F95F71F00691A5A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1A6D22771F95F71F00691A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A6D22791F95F71F00691A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +54,8 @@
 		1A6D228E1F95F71F00691A5A /* BestPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6D22921F95F71F00691A5A /* BestPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestPracticeUITests.swift; sourceTree = "<group>"; };
 		1A6D22941F95F71F00691A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6D22A21F960A1A00691A5A /* BPUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPUserTableViewCell.swift; sourceTree = "<group>"; };
+		1A6D22A51F960FBE00691A5A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2BF90CFBBF77489F7F1A9970 /* Pods-BestPracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestPracticeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BestPracticeUITests/Pods-BestPracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E074003ED33E6738E954381 /* Pods-BestPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BestPractice/Pods-BestPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		5FFEFF69A71D81576075D325 /* Pods_BestPracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestPracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,8 +120,9 @@
 		1A6D226F1F95F71F00691A5A /* BestPractice */ = {
 			isa = PBXGroup;
 			children = (
+				1A6D22A41F960FA400691A5A /* Model */,
+				1A6D22A01F9609B200691A5A /* BPUser */,
 				1A6D22701F95F71F00691A5A /* AppDelegate.swift */,
-				1A6D22721F95F71F00691A5A /* FirstViewController.swift */,
 				1A6D22741F95F71F00691A5A /* SecondViewController.swift */,
 				1A6D22761F95F71F00691A5A /* Main.storyboard */,
 				1A6D22791F95F71F00691A5A /* Assets.xcassets */,
@@ -143,6 +148,31 @@
 				1A6D22941F95F71F00691A5A /* Info.plist */,
 			);
 			path = BestPracticeUITests;
+			sourceTree = "<group>";
+		};
+		1A6D22A01F9609B200691A5A /* BPUser */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D22721F95F71F00691A5A /* BPUserViewController.swift */,
+				1A6D22A11F9609CF00691A5A /* View */,
+			);
+			path = BPUser;
+			sourceTree = "<group>";
+		};
+		1A6D22A11F9609CF00691A5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D22A21F960A1A00691A5A /* BPUserTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A6D22A41F960FA400691A5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D22A51F960FBE00691A5A /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7EBF8722E455D29256D1986B /* Frameworks */ = {
@@ -352,6 +382,7 @@
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -362,6 +393,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -415,6 +447,7 @@
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -423,6 +456,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,9 +518,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6D22A31F960A1A00691A5A /* BPUserTableViewCell.swift in Sources */,
 				1A6D22751F95F71F00691A5A /* SecondViewController.swift in Sources */,
 				1A6D22711F95F71F00691A5A /* AppDelegate.swift in Sources */,
-				1A6D22731F95F71F00691A5A /* FirstViewController.swift in Sources */,
+				1A6D22A61F960FBE00691A5A /* User.swift in Sources */,
+				1A6D22731F95F71F00691A5A /* BPUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
