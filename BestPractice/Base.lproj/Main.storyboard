@@ -72,7 +72,7 @@
                                                         <constraint firstAttribute="height" constant="15" id="Zea-XY-bqZ"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="guW-cC-db7" customClass="phone">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="guW-cC-db7">
                                                     <rect key="frame" x="86" y="33" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="OQR-de-qgb"/>
@@ -95,6 +95,7 @@
                                                 <constraint firstItem="0Co-rZ-R5H" firstAttribute="centerY" secondItem="SX7-5n-Gyr" secondAttribute="centerY" id="O2e-tO-NRN"/>
                                                 <constraint firstAttribute="bottom" secondItem="8HW-wP-Qai" secondAttribute="bottom" constant="8" id="Qyj-1l-Qhn"/>
                                                 <constraint firstItem="MKh-Ha-C56" firstAttribute="leading" secondItem="guW-cC-db7" secondAttribute="trailing" constant="8" id="RDx-Kk-vQA"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MKh-Ha-C56" secondAttribute="trailing" constant="20" symbolic="YES" id="W32-xl-ghE"/>
                                                 <constraint firstItem="MKh-Ha-C56" firstAttribute="centerY" secondItem="guW-cC-db7" secondAttribute="centerY" id="YUI-Pl-yn4"/>
                                                 <constraint firstItem="guW-cC-db7" firstAttribute="leading" secondItem="SX7-5n-Gyr" secondAttribute="leading" id="b7D-Dy-bcx"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SX7-5n-Gyr" secondAttribute="trailing" constant="20" symbolic="YES" id="bRZ-Og-GMr"/>

@@ -19,6 +19,8 @@
 		1A6D22A31F960A1A00691A5A /* BPUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22A21F960A1A00691A5A /* BPUserTableViewCell.swift */; };
 		1A6D22A61F960FBE00691A5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22A51F960FBE00691A5A /* User.swift */; };
 		1A9B34EA1F96FB9000A8F54A /* StoryBoardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9B34E91F96FB9000A8F54A /* StoryBoardExtension.swift */; };
+		1A9B34ED1F97361200A8F54A /* BPUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9B34EC1F97361200A8F54A /* BPUserViewModel.swift */; };
+		1A9B34F11F973F4400A8F54A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9B34F01F973F4400A8F54A /* UIViewControllerExtension.swift */; };
 		28FB927B72BB2CDC80CD458C /* Pods_BestPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFEFF69A71D81576075D325 /* Pods_BestPracticeTests.framework */; };
 		6F483E47C53F21D4A7ABAA2A /* Pods_BestPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7CBD384DB472F07EAC89A /* Pods_BestPractice.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		1A6D22A21F960A1A00691A5A /* BPUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPUserTableViewCell.swift; sourceTree = "<group>"; };
 		1A6D22A51F960FBE00691A5A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A9B34E91F96FB9000A8F54A /* StoryBoardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardExtension.swift; sourceTree = "<group>"; };
+		1A9B34EC1F97361200A8F54A /* BPUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPUserViewModel.swift; sourceTree = "<group>"; };
+		1A9B34F01F973F4400A8F54A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		2BF90CFBBF77489F7F1A9970 /* Pods-BestPracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestPracticeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BestPracticeUITests/Pods-BestPracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E074003ED33E6738E954381 /* Pods-BestPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BestPractice/Pods-BestPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		5FFEFF69A71D81576075D325 /* Pods_BestPracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestPracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +134,7 @@
 				1A6D22791F95F71F00691A5A /* Assets.xcassets */,
 				1A6D227B1F95F71F00691A5A /* LaunchScreen.storyboard */,
 				1A6D227E1F95F71F00691A5A /* Info.plist */,
-				1A9B34E91F96FB9000A8F54A /* StoryBoardExtension.swift */,
+				1A9B34EF1F973F2200A8F54A /* Extension */,
 			);
 			path = BestPractice;
 			sourceTree = "<group>";
@@ -156,7 +160,8 @@
 		1A6D22A01F9609B200691A5A /* BPUser */ = {
 			isa = PBXGroup;
 			children = (
-				1A6D22721F95F71F00691A5A /* BPUserViewController.swift */,
+				1A9B34EE1F97362100A8F54A /* ViewController */,
+				1A9B34EB1F97345600A8F54A /* ViewModel */,
 				1A6D22A11F9609CF00691A5A /* View */,
 			);
 			path = BPUser;
@@ -176,6 +181,31 @@
 				1A6D22A51F960FBE00691A5A /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1A9B34EB1F97345600A8F54A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A9B34EC1F97361200A8F54A /* BPUserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A9B34EE1F97362100A8F54A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D22721F95F71F00691A5A /* BPUserViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1A9B34EF1F973F2200A8F54A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1A9B34E91F96FB9000A8F54A /* StoryBoardExtension.swift */,
+				1A9B34F01F973F4400A8F54A /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		7EBF8722E455D29256D1986B /* Frameworks */ = {
@@ -382,6 +412,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BestPracticeTests/Pods-BestPracticeTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -393,6 +424,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -447,6 +479,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BestPractice/Pods-BestPractice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -456,6 +489,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -522,8 +556,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6D22A31F960A1A00691A5A /* BPUserTableViewCell.swift in Sources */,
+				1A9B34ED1F97361200A8F54A /* BPUserViewModel.swift in Sources */,
 				1A6D22751F95F71F00691A5A /* SecondViewController.swift in Sources */,
 				1A9B34EA1F96FB9000A8F54A /* StoryBoardExtension.swift in Sources */,
+				1A9B34F11F973F4400A8F54A /* UIViewControllerExtension.swift in Sources */,
 				1A6D22711F95F71F00691A5A /* AppDelegate.swift in Sources */,
 				1A6D22A61F960FBE00691A5A /* User.swift in Sources */,
 				1A6D22731F95F71F00691A5A /* BPUserViewController.swift in Sources */,

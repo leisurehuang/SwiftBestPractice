@@ -2,6 +2,7 @@
 platform :ios, '9.0'
 
 def shared_pods
+  pod 'PKHUD', '~> 5.0'
   pod 'R.swift', '~> 3.3'
   pod 'SnapKit', '~> 4.0'
   pod 'Kingfisher', '~> 4.1'
