@@ -14,7 +14,8 @@ class BPUserTableViewCell: UITableViewCell {
     @IBOutlet weak var nickName: UILabel!
     @IBOutlet weak var activeStatus: UIButton!
     @IBOutlet weak var address: UILabel!
-    
+    @IBOutlet weak var gender: UIImageView!
+    @IBOutlet weak var phone: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

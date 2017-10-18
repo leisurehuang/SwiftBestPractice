@@ -29,7 +29,7 @@ class BPUserViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func fetchUsers() {
-        Alamofire.request("http://localhost:3000/users", method: .get, encoding: JSONEncoding.default).validate().responseJSON { response in
+        Alamofire.request("http://10.205.22.250:3000/users", method: .get, encoding: JSONEncoding.default).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let jsonArray = JSON(value).arrayValue
@@ -61,6 +61,9 @@ class BPUserViewController: UIViewController,UITableViewDelegate,UITableViewData
             cell.address.text = user.address
             cell.activeStatus.isHidden = user.activeStatus == 1
             cell.headerImageView.kf.setImage(with: URL.init(string: user.image))
+            cell.gender.image = user.getUserGenderImage()
+            cell.phone.text = user.phone
+            cell.accessoryType = .disclosureIndicator
         }
         return cell
     }

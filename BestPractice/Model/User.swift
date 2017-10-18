@@ -11,15 +11,15 @@ import SwiftyJSON
 
 
 class User : NSObject, NSCoding{
-    
     var activeStatus : Int!
     var address : String!
     var age : Int!
     var email : String!
+    var gender : Int!
     var id : Int!
     var image : String!
     var nickName : String!
-    var phone : Int!
+    var phone : String!
     var status : Int!
     
     
@@ -34,10 +34,11 @@ class User : NSObject, NSCoding{
         address = json["address"].stringValue
         age = json["age"].intValue
         email = json["email"].stringValue
+        gender = json["gender"].intValue
         id = json["id"].intValue
         image = json["image"].stringValue
         nickName = json["nickName"].stringValue
-        phone = json["phone"].intValue
+        phone = json["phone"].stringValue
         status = json["status"].intValue
     }
     
@@ -58,6 +59,9 @@ class User : NSObject, NSCoding{
         }
         if email != nil{
             dictionary["email"] = email
+        }
+        if gender != nil{
+            dictionary["gender"] = gender
         }
         if id != nil{
             dictionary["id"] = id
@@ -87,10 +91,11 @@ class User : NSObject, NSCoding{
         address = aDecoder.decodeObject(forKey: "address") as? String
         age = aDecoder.decodeObject(forKey: "age") as? Int
         email = aDecoder.decodeObject(forKey: "email") as? String
+        gender = aDecoder.decodeObject(forKey: "gender") as? Int
         id = aDecoder.decodeObject(forKey: "id") as? Int
         image = aDecoder.decodeObject(forKey: "image") as? String
         nickName = aDecoder.decodeObject(forKey: "nickName") as? String
-        phone = aDecoder.decodeObject(forKey: "phone") as? Int
+        phone = aDecoder.decodeObject(forKey: "phone") as? String
         status = aDecoder.decodeObject(forKey: "status") as? Int
         
     }
@@ -113,6 +118,9 @@ class User : NSObject, NSCoding{
         if email != nil{
             aCoder.encode(email, forKey: "email")
         }
+        if gender != nil{
+            aCoder.encode(gender, forKey: "gender")
+        }
         if id != nil{
             aCoder.encode(id, forKey: "id")
         }
@@ -129,6 +137,17 @@ class User : NSObject, NSCoding{
             aCoder.encode(status, forKey: "status")
         }
         
+    }
+    
+    func getUserGenderImage() -> (UIImage) {
+        switch gender {
+        case 1:
+            return UIImage.init(named: "male")!
+        case 2:
+            return UIImage.init(named: "female")!
+        default:
+            return UIImage.init(named: "sex")!
+        }
     }
     
 }
