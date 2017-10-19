@@ -59,12 +59,16 @@ class BPUserViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellId = "BPUserTableViewCell"
+        let cellId = R.reuseIdentifier.bPUserTableViewCell.identifier
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! BPUserTableViewCell
         if let user: User = self.viewModel.users?[indexPath.row] {
             cell.updateCellWithUserInfo(user)
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: R.segue.bPUserViewController.showUserDetail, sender: nil)
     }
 }
 

@@ -139,11 +139,11 @@ class User: NSObject, NSCoding {
     func getUserGenderImage() -> (UIImage) {
         switch gender {
         case 1:
-            return UIImage.init(named: "male")!
+            return R.image.male()!
         case 2:
-            return UIImage.init(named: "female")!
+            return R.image.female()!
         default:
-            return UIImage.init(named: "sex")!
+            return R.image.sex()!
         }
     }
 
