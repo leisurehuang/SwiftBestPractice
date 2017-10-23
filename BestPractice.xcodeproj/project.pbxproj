@@ -10,6 +10,7 @@
 		082250932A36467C73BA2D63 /* Pods_BestPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2B0CFF42935D58758F0390 /* Pods_BestPracticeUITests.framework */; };
 		1A560D7E1F98854100331C5C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A560D7D1F98854100331C5C /* R.generated.swift */; };
 		1A560D801F988AA900331C5C /* BPUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A560D7F1F988AA900331C5C /* BPUserDetailViewController.swift */; };
+		1A560D831F988CC000331C5C /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A560D821F988CC000331C5C /* ServiceClient.swift */; };
 		1A6D22711F95F71F00691A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22701F95F71F00691A5A /* AppDelegate.swift */; };
 		1A6D22731F95F71F00691A5A /* BPUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22721F95F71F00691A5A /* BPUserViewController.swift */; };
 		1A6D22751F95F71F00691A5A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D22741F95F71F00691A5A /* SecondViewController.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		1A560D7D1F98854100331C5C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		1A560D7F1F988AA900331C5C /* BPUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPUserDetailViewController.swift; sourceTree = "<group>"; };
+		1A560D821F988CC000331C5C /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
 		1A6D226D1F95F71F00691A5A /* BestPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6D22701F95F71F00691A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A6D22721F95F71F00691A5A /* BPUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPUserViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A560D811F988C9900331C5C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1A560D821F988CC000331C5C /* ServiceClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		1A6D22641F95F71F00691A5A = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		1A6D226F1F95F71F00691A5A /* BestPractice */ = {
 			isa = PBXGroup;
 			children = (
+				1A560D811F988C9900331C5C /* Service */,
 				1A6D22A41F960FA400691A5A /* Model */,
 				1A6D22A01F9609B200691A5A /* BPUser */,
 				1A6D22701F95F71F00691A5A /* AppDelegate.swift */,
@@ -578,6 +589,7 @@
 				1A6D22A31F960A1A00691A5A /* BPUserTableViewCell.swift in Sources */,
 				1A9B34ED1F97361200A8F54A /* BPUserViewModel.swift in Sources */,
 				1A560D7E1F98854100331C5C /* R.generated.swift in Sources */,
+				1A560D831F988CC000331C5C /* ServiceClient.swift in Sources */,
 				1A6D22751F95F71F00691A5A /* SecondViewController.swift in Sources */,
 				1A560D801F988AA900331C5C /* BPUserDetailViewController.swift in Sources */,
 				1A9B34EA1F96FB9000A8F54A /* StoryBoardExtension.swift in Sources */,

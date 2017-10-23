@@ -9,6 +9,7 @@
 import UIKit
 
 import Kingfisher
+import PromiseKit
 
 class BPUserViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -37,13 +38,15 @@ class BPUserViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func fetchUsers() {
-        self.showProgressHUD()
-        self.viewModel.fetchUsers(success: { users in
-            self.hiddenAllHUD()
-            self.usersTable.reloadData()
-        }) { error in
-            self.hiddenAllHUD()
-            self.showFailHUD(error)
+        firstly { () -> Promise<Users> in
+            self.showProgressHUD()
+            return self.viewModel.fetchUsers()
+            }.always {
+                self.hiddenAllHUD()
+            }.then { _ -> Void in
+                self.usersTable.reloadData()
+            }.catch {error in
+                self.showFailHUD(error)
         }
     }
 

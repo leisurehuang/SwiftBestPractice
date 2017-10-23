@@ -14,20 +14,12 @@ class BPUserViewModel {
     typealias successCallBack = ([User]?) -> (Void)
     typealias failCallBack = (Error) -> (Void)
     var users: [User]?
-    let requestUrl = "http://10.205.22.250:3000/users"
+    let requestUrl = "users"
 
-    func fetchUsers(success: @escaping successCallBack, fail: @escaping failCallBack) {
-        Alamofire.request(requestUrl, method: .get, encoding: JSONEncoding.default).validate().responseJSON { response in
-            switch response.result {
-            case .success(let value):
-                let jsonArray = JSON(value).arrayValue
-                self.users = jsonArray.map({ (json) -> User in
-                    return User.init(fromJson: json)
-                })
-                success(self.users)
-            case .failure(let error):
-                fail(error)
-            }
-        }
+    func fetchUsers() ->Promise<Users>{
+        return appServiceClient.get(endpoint: requestUrl).responseModel(type: Users.self).then(execute: { (users) -> Users in
+            self.users = users
+            return users
+        })
     }
 }
